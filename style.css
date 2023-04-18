@@ -92,13 +92,14 @@ main ul li {
   align-items: center;
 }
 
-.ph-bold {
+.ph-bold.ph-check {
   color: var(--green);
   font-size: 5rem;
 }
 
 .button {
   width: 100%;
+  margin: 5.7rem 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,8 +165,8 @@ main ul li {
 }
 
 .beneficios-card {
-  width: 60rem;
-  height: 35rem;
+  width: 45rem;
+  height: 22rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -187,4 +188,63 @@ main ul li {
 
 .beneficios-card h1 {
   font-size: min(6vw, 2.2rem);
+}
+
+.test {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.depoimentos-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.depoimentos-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 43rem;
+  text-align: left;
+}
+
+.depoimentos-card img {
+  border-radius: 50%;
+  object-fit: cover
+}
+
+footer {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(30,30,30,1), rgba(0,0,0,1) 40%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .footer-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+@media (max-width: 913px) {
+  footer .footer-wrapper {
+    flex-direction: column;
+  }
+}
+
+footer .footer-text p {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.ph-bold.ph-instagram-logo {
+  color: #fff;
+  font-size: 5rem;
 }
